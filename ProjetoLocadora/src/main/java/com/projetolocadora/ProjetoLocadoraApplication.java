@@ -1,4 +1,4 @@
-package com.betete.projetolocadora;
+package com.projetolocadora;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

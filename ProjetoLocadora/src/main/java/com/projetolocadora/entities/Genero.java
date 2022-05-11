@@ -1,0 +1,13 @@
+package com.projetolocadora.entities;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Genero {
+
+    private String genero;
+}

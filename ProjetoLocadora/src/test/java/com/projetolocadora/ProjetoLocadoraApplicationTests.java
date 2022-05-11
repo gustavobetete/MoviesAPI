@@ -1,4 +1,4 @@
-package com.betete.projetolocadora;
+package com.projetolocadora;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
