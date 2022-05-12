@@ -23,7 +23,9 @@ public class Filmes {
     private Long id;
     private String titulo;
     private Time duracao;
-//    private Produtora produtora;
-//    private List<Atores> atores = new ArrayList<>();
+    private Produtora produtorasId;
+    private List<Atores> atores = new ArrayList<>();
+    private Genero generosId;
+    private String faixaEtaria;
 
 }
