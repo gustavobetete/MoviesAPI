@@ -18,6 +18,5 @@ public class Genero {
     private String genero;
 
     @ManyToOne
-    @JoinColumn(name = "filme_id")
     private Filme filme;
 }

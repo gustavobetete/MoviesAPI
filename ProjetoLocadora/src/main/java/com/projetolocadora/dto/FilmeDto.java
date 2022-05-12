@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Time;
+import java.time.Year;
 import java.util.List;
 
 @Data
@@ -17,7 +18,8 @@ public class FilmeDto {
     private Long id;
     private String titulo;
     private Time duracao;
-    private Produtora produtoras;
-    private List<Genero> generos;
+    private ProdutoraFilmeDto produtoras;
+    private List<GeneroFilmeDto> generos;
     private String faixaEtaria;
+    private Long anoLancamento;
 }

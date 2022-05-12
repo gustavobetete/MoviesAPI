@@ -6,7 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Time;
+import java.time.Year;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -33,4 +35,5 @@ public class Filme {
 
     private String faixaEtaria;
 
+    private Long anoLancamento;
 }

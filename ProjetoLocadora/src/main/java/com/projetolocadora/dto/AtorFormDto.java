@@ -20,12 +20,10 @@ public class AtorFormDto {
     @NotBlank(message = "O campo nome não pode estar em branco")
     private String nome;
 
-    @NotNull(message = "O campo nascimento não pode ser nulo")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy", locale = "pt-BR")
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy", locale = "pt-BR")
     private LocalDate nascimento;
 
-    @NotNull(message = "O campo morte não pode ser nulo")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy", locale = "pt-BR")
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy", locale = "pt-BR")
     private LocalDate morte;
 
     @NotNull(message = "O campo bio não pode ser nulo")

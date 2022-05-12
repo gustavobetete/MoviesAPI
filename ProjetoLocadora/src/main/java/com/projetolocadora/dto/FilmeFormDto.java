@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Time;
+import java.time.Year;
 import java.util.List;
 
 @Data
@@ -35,4 +36,6 @@ public class FilmeFormDto {
     @NotEmpty(message = "O campo faixaEtaria não pode ser vazio")
     @NotBlank(message = "O campo faixaEtaria não pode estar em branco")
     private String faixaEtaria;
+
+    private Long anoLancamento;
 }
