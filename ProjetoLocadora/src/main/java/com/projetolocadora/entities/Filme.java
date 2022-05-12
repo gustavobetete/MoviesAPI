@@ -1,9 +1,6 @@
 package com.projetolocadora.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,16 +13,24 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Filmes {
+public class Filme {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String titulo;
     private Time duracao;
-    private Produtora produtorasId;
-    private List<Atores> atores = new ArrayList<>();
-    private Genero generosId;
+
+    @ManyToOne
+    @JoinColumn(name = "produtora_id")
+    private Produtora produtoras;
+
+    @OneToMany(mappedBy = "filme")
+    private List<Ator> ator = new ArrayList<>();
+
+    @OneToMany(mappedBy = "filme")
+    private List<Genero> generos;
+
     private String faixaEtaria;
 
 }

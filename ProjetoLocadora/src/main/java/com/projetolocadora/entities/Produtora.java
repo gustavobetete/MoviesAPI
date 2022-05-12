@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity
 public class Produtora {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

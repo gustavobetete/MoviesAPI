@@ -1,9 +1,6 @@
 package com.projetolocadora.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,7 +11,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Atores {
+public class Ator {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,4 +21,8 @@ public class Atores {
     private LocalDate nascimento;
     private LocalDate morte;
     private String bio;
+
+    @ManyToOne
+    @JoinColumn(name = "filme_id")
+    private Filme filme;
 }
