@@ -9,7 +9,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Time;
-import java.time.Year;
 import java.util.List;
 
 @Data
@@ -28,7 +27,7 @@ public class FilmeFormDto {
     @NotNull(message = "O campo NomeProdutora não pode ser nulo")
     @NotEmpty(message = "O campo NomeProdutora não pode ser vazio")
     @NotBlank(message = "O campo NomeProdutora não pode estar em branco")
-    private String NomeProdutora;
+    private String nomeProdutora;
 
     private List<Genero> generos;
 

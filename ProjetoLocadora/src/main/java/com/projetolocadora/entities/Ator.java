@@ -1,5 +1,6 @@
 package com.projetolocadora.entities;
 
+import com.projetolocadora.constants.Sexo;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,6 +22,8 @@ public class Ator {
     private LocalDate nascimento;
     private LocalDate morte;
     private String bio;
+    @Enumerated(EnumType.STRING)
+    private Sexo sexo;
 
     @ManyToOne
     @JoinColumn(name = "filme_id")

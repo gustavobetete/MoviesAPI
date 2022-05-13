@@ -1,6 +1,7 @@
 package com.projetolocadora.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.projetolocadora.constants.Sexo;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
@@ -20,14 +21,14 @@ public class AtorFormDto {
     @NotBlank(message = "O campo nome não pode estar em branco")
     private String nome;
 
-//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy", locale = "pt-BR")
     private LocalDate nascimento;
 
-//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy", locale = "pt-BR")
     private LocalDate morte;
 
     @NotNull(message = "O campo bio não pode ser nulo")
     @NotEmpty(message = "O campo bio não pode ser vazio")
     @NotBlank(message = "O campo bio não pode estar em branco")
     private String bio;
+
+    private Sexo sexo;
 }
