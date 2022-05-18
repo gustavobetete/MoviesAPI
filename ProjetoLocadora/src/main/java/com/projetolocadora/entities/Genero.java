@@ -15,7 +15,7 @@ public class Genero {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String genero;
+    private String nome;
 
     @ManyToOne
     private Filme filme;

@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class GeneroFilmeDto {
 
 
-    private String genero;
+    private String nome;
 }

@@ -15,5 +15,5 @@ public class GeneroFormDto {
     @NotNull(message = "O campo genero não pode ser nulo")
     @NotEmpty(message = "O campo genero não pode ser vazio")
     @NotBlank(message = "O campo genero não pode estar em branco")
-    private String genero;
+    private String nome;
 }

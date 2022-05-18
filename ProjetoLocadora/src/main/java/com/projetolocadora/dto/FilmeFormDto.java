@@ -24,10 +24,9 @@ public class FilmeFormDto {
     @NotNull(message = "O campo duracao não pode ser nulo")
     private Time duracao;
 
-    @NotNull(message = "O campo NomeProdutora não pode ser nulo")
-    @NotEmpty(message = "O campo NomeProdutora não pode ser vazio")
-    @NotBlank(message = "O campo NomeProdutora não pode estar em branco")
-    private String nomeProdutora;
+//    @NotNull(message = "O campo NomeProdutora não pode ser nulo")
+//    @NotEmpty(message = "O campo NomeProdutora não pode ser vazio")
+    private ProdutoraFormDto nomeProdutora;
 
     private List<Genero> generos;
 
